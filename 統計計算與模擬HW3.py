@@ -109,7 +109,7 @@ Mean_N41=np.mean(N41)
 Var_N41=np.var(N41)
 
 # Compare confidence interval
-CI_MC_2=(Mean_MC_2-(1.96*Var_MC_2),Mean_MC_2+(1.96*Var_MC_2))
-CI_N41=(Mean_N41-(1.96*Var_N41),Mean_N41+(1.96*Var_N41))
+CI_MC_2=(Mean_MC_2-(1.96*np.sqrt(Var_MC_2)),Mean_MC_2+(1.96*np.sqrt(Var_MC_2)))
+CI_N41=(Mean_N41-(1.96*np.sqrt(Var_N41)),Mean_N41+(1.96**np.sqrt(Var_N41)))
 
 
